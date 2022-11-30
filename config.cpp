@@ -24,7 +24,7 @@ class CfgPatches {
 		requiredAddons[] = {
 			"sGunplay",
 			"MSFC_AK_ALFA",
-			"MSFC_AK12MR",
+			"MSFC_weapons_3D_Firearms_AK12MPunk",
 			"MSFC_AN94",
 			"MSFC_CZ805",
 			"MSFC_MSBS",
@@ -36,6 +36,12 @@ class CfgPatches {
 class CfgWeapons {
 	class Rifle_Base;
 	class MSFC_AK_ALFA_Base : Rifle_Base {
+		s_recoilControlStabilityX = 0.20;
+		s_recoilControlStabilityY = 0.20;
+		s_recoilControlMisalignmentX = 0.55;
+		s_recoilControlMisalignmentY = 0.50;
+	};
+	class MSFC_AK12MPunk_Base : Rifle_Base {
 		s_recoilControlStabilityX = 0.20;
 		s_recoilControlStabilityY = 0.20;
 		s_recoilControlMisalignmentX = 0.55;
